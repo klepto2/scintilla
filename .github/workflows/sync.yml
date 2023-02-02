@@ -20,7 +20,7 @@ jobs:
               
         - name: sync with official
           env:
-            GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}        
+            GITHUB_TOKEN: ${{ secrets.MIRROR_ACTION }}        
           run: |
             cd scintilla
             git config user.name "auto-sync-with-official[bot]"
